@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/portfolioAD115/static/css/main.c8a8fee3.css",
+    "main.js": "/portfolioAD115/static/js/main.a690e632.js",
+    "static/media/netflix.png": "/portfolioAD115/static/media/netflix.e787df0be821a47b4b1b.png",
+    "static/media/portfolio.png": "/portfolioAD115/static/media/portfolio.f8608da36f285f30eda5.png",
+    "static/media/mue.png": "/portfolioAD115/static/media/mue.629dfcfd4646f600527f.png",
+    "static/media/AnimLogoAE.mp4": "/portfolioAD115/static/media/AnimLogoAE.df6ee4fdca92ece203cc.mp4",
+    "static/media/cv.pdf": "/portfolioAD115/static/media/cv.cf4951359d8a68a00890.pdf",
+    "static/media/Electrolize-Regular.ttf": "/portfolioAD115/static/media/Electrolize-Regular.b27462fc6532a900b8d3.ttf",
+    "static/media/vpk.png": "/portfolioAD115/static/media/vpk.0ddf0afdcce43e0700d5.png",
+    "static/media/wordpress.png": "/portfolioAD115/static/media/wordpress.d362a522d342111ac1f0.png",
+    "static/media/krita.png": "/portfolioAD115/static/media/krita.f8830f6c87276b338ce0.png",
+    "index.html": "/portfolioAD115/index.html",
+    "main.c8a8fee3.css.map": "/portfolioAD115/static/css/main.c8a8fee3.css.map",
+    "main.a690e632.js.map": "/portfolioAD115/static/js/main.a690e632.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c8a8fee3.css",
+    "static/js/main.a690e632.js"
+  ]
+}

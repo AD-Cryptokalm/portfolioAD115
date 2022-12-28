@@ -1,0 +1,279 @@
+.works {
+  margin-left: 20%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  &-container {
+    width: 100%;
+    flex-direction: column;
+  }
+  &-title {
+    color: white;
+    font-size: calc(1rem + 3vw);
+    padding: 1rem 0 4rem;
+    display: inline-block;
+    & span {
+      font-family: "electro";
+      opacity: 0;
+    }
+  }
+  &-cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 95%;
+    height: 50vh;
+  }
+  &-card {
+    height: 100%;
+    min-height: 392px;
+    width: 20%;
+    min-width: 254px;
+    margin-right: 1rem;
+    margin-bottom: 6rem;
+    color: white;
+    animation: spawn 3s ease-in-out forwards;
+    position: relative;
+  }
+  &-card2 {
+    height: 100%;
+    width: 20%;
+    min-width: 254px;
+    min-height: 392px;
+    margin-right: 1rem;
+    margin-bottom: 6rem;
+    color: white;
+    animation: spawn 3.5s ease-in-out forwards;
+    position: relative;
+  }
+  &-tilt {
+    transform-style: preserve-3d;
+    transition: 1s;
+  }
+  &-cardImg {
+    position: relative;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    transform: translateZ(1px);
+  }
+  #bckg1 {
+    background: url("../../../public/images/netflix.png");
+    background-size: cover;
+  }
+  #bckg2 {
+    background: url("../../../public/images/vpk.png");
+    background-size: cover;
+  }
+  #bckg3 {
+    background: url("../../../public/images/demoEcommerce.png");
+    background-size: cover;
+  }
+  #bckg4 {
+    background: url("../../../public/images/portfolio.png");
+    background-size: cover;
+  }
+  &-cardDescription {
+    color: #0674b8;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, -40px) rotateY(180deg);
+    width: 85%;
+    height: 87%;
+    border-radius: 15px;
+    overflow: hidden;
+    border: solid 5px white;
+    background: white;
+    padding: 0.7rem;
+    font-family: "electro";
+  }
+  &-cardDescription p {
+    font-size: calc(0.4rem + 0.4vw);
+  }
+  &-cardTitle {
+    margin-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: calc(1rem + 0.5vw);
+    display: inline-block;
+  }
+}
+.ext {
+    font-size: calc(30rem + 1vw);
+    color: #0674b8;
+    font-weight: bold;
+    font-size: x-large;
+  }
+  .linkGit i {
+    padding: 0;
+    font-size: calc(1.2rem + 1vw);
+    position: absolute;
+    transform: translateY(-50%);
+    margin-left: 0.5rem;
+  }
+  .linkGit .popup {
+    visibility: hidden;
+    font-family: "electro";
+    width: 120px;
+    background-color: rgba(10, 141, 223, 0.8);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    bottom: 0;
+    right: 10%;
+    position: absolute;
+    z-index: 1;
+  }
+  .linkGit:hover .popup {
+    visibility: visible;
+  }
+  .cardFooter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  .works-animForMobil {
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    right: -3rem;
+    font-size: x-large;
+    color: #299ace;
+    text-shadow: #fff 0px 0px 5px, #fff 0px 0px 10px, #fff 0px 0px 15px,
+      #299ace 0px 0px 20px, #299ace 0px 0px 30px, #299ace 0px 0px 40px,
+      #299ace 0px 0px 50px, #299ace 0px 0px 75px;
+    transform: translateX(0px);
+    animation: finger 1s infinite;
+  }
+  @keyframes finger {
+    0% {
+      transform: translateX(0px);
+    }
+    50% {
+      transform: translateX(-10px);
+    }
+    100% {
+      transform: translateX(0px);
+    }
+  }
+  @media only screen and (max-width: 630px) {
+    .works-animForMobil {
+      opacity: 1;
+    }
+  }
+  @media only screen and (max-width: 1080px) {
+    .works-cards {
+      justify-content: space-around;
+    }
+  }
+  @media only screen and (max-width: 926px) {
+    .works {
+      margin-left: 2rem;
+      display: inline-block;
+      justify-content: space-around;
+    }
+  }
+  @media only screen and (max-width: 630px) {
+    .works-card.works-card2 {
+      height: 80%;
+      width: 100%;
+      min-width: 274px;
+    }
+    .works-cards {
+      display: block;
+      width: 100%;
+    }
+  }
+  .blockLogo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .imgReact {
+    width: 50px;
+    height: 50px;
+    margin-top: 0.3rem;
+    background: url("../../../public/images/reactLogo.png");
+    background-size: cover;
+  }
+  .imgScss {
+    width: 50px;
+    height: 50px;
+    margin-top: 0.3rem;
+    background: url("../../../public/images/scss.png");
+    background-size: cover;
+  }
+  .imgMDB {
+    width: 50px;
+    height: 50px;
+    margin-top: 0.3rem;
+    background: url("../../../public/images/mdb.png");
+    background-size: cover;
+  }
+  .imgJs {
+    width: 50px;
+    height: 50px;
+    margin-top: 0.3rem;
+    background: url("../../../public/images/js.png");
+    background-size: cover;
+  }
+  .imgCss {
+    width: 50px;
+    height: 50px;
+    margin-top: 0.3rem;
+    background: url("../../../public/images/css3.png");
+    background-size: cover;
+  }
+  .imgNode {
+    width: 50px;
+    height: 50px;
+    margin-top: 0.3rem;
+    background: url("../../../public/images/node.png");
+    background-size: cover;
+  }
+  .imgKrita {
+    width: 50px;
+    height: 50px;
+    margin-top: 0.3rem;
+    background: url("../../../public/images/krita.png");
+    background-size: cover;
+  }
+  .imgWordpress {
+    width: 50px;
+    height: 50px;
+    margin-top: 0.3rem;
+    background: url("../../../public/images/wordpress.png");
+    background-size: cover;
+  }
+  .imgFirebase {
+    width: 50px;
+    height: 50px;
+    margin-top: 0.3rem;
+    background: url("../../../public/images/firebase.png");
+    background-size: cover;
+  }
+  .imgAfterEffect {
+    width: 50px;
+    height: 50px;
+    margin-top: 0.3rem;
+    background: url("../../../public/images/afterEffect.png");
+    background-size: cover;
+  }
+  .imgHtml5 {
+    width: 50px;
+    height: 50px;
+    margin-top: 0.3rem;
+    background: url("../../../public/images/html5.png");
+    background-size: cover;
+  }
+  .imgRedux {
+    width: 50px;
+    height: 50px;
+    margin-top: 0.3rem;
+    background: url("../../../public/images/redux.png");
+    background-size: cover;
+  }
+  

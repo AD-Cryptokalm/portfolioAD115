@@ -1,0 +1,157 @@
+.accueil {
+  margin-left: 20%;
+  height: 100vh;
+  color: white;
+  display: flex;
+  align-items: center;
+  &-spec {
+    font-family: "Electro", sans-serif;
+    font-size: calc(1rem + 1vw);
+    margin-top: 1rem;
+  }
+  &-name {
+    margin-bottom: 1rem;
+  }
+  &-job {
+    padding-bottom: 0.7rem;
+  }
+}
+@media only screen and (max-width: 926px) {
+  .accueil {
+    margin-left: 2rem;
+    height: 40vh;
+  }
+}
+h1 span {
+  opacity: 0;
+  rotate: 0;
+  font-family: "Electro", sans-serif;
+  font-size: calc(1rem + 5vw);
+}
+.letter01 {
+  animation: letters 0.5s ease 0000ms forwards;
+}
+.letter02 {
+  animation: letters 0.5s ease 0200ms forwards;
+}
+.letter03 {
+  animation: letters 0.5s ease 0400ms forwards;
+}
+.letter04 {
+  animation: letters 0.5s ease 0600ms forwards;
+}
+.letter05 {
+  animation: letters 0.5s ease 0800ms forwards;
+}
+.letter06 {
+  animation: letters 0.5s ease 1000ms forwards;
+}
+.letter07 {
+  animation: letters 0.5s ease 1200ms forwards;
+}
+.letter09 {
+  animation: letters 0.5s ease 1400ms forwards;
+}
+.letter10 {
+  animation: letters 0.5s ease 1600ms forwards;
+}
+.letter11 {
+  animation: letters 0.5s ease 1800ms forwards;
+}
+.letter12 {
+  animation: letters 0.5s ease 2000ms forwards;
+}
+.letter13 {
+  animation: letters 0.5s ease 2200ms forwards;
+}
+.letter14 {
+  animation: letters 0.5s ease 2400ms forwards;
+}
+.letter15 {
+  animation: letters 0.5s ease 2600ms forwards;
+}
+.letter16 {
+  animation: letters 0.5s ease 2800ms forwards;
+}
+.letter17 {
+  animation: letters 0.5s ease 3000ms forwards;
+}
+.letter18 {
+  animation: letters 0.5s ease 3200ms forwards;
+}
+.letter19 {
+  animation: letters 0.5s ease 3600ms forwards;
+}
+.letter20 {
+  animation: letters 0.5s ease 3800ms forwards;
+}
+.letter21 {
+  animation: letters 0.5s ease 4000ms forwards;
+}
+.letter22 {
+  animation: letters 0.5s ease 4200ms forwards;
+}
+.letter23 {
+  animation: letters 0.5s ease 4400ms forwards;
+}
+.letter24 {
+  animation: letters 0.5s ease 4600ms forwards;
+}
+.letter25 {
+  animation: letters 0.5s ease 4800ms forwards;
+}
+.letter26 {
+  animation: letters 0.5s ease 5000ms forwards;
+}
+.letter27 {
+  animation: letters 0.5s ease 5200ms forwards;
+}
+.letter28 {
+  animation: letters 0.5s ease 5400ms forwards;
+}
+.letter29 {
+  animation: letters 0.5s ease 5600ms forwards;
+}
+.emptySpan {
+  animation: none;
+}
+@keyframes letters {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+Òh1::after {
+  content: "";
+  display: block;
+  box-shadow: 0px 0px 16px 4px #0a8edf;
+  background: white;
+  border-radius: 25px;
+  height: 3px;
+  width: 0%;
+  opacity: 0;
+  margin-top: 0.2em;
+  animation: lineWidth 5.6s ease-in-out forwards;
+}
+@keyframes lineWidth {
+  0% {
+    width: 0%;
+    opacity: 0;
+  }
+  100% {
+    width: 100%;
+    opacity: 1;
+  }
+}
+.accueil-blockName span {
+  transition: 0.3s linear;
+  &:hover {
+    display: inline-block;
+    transform: scaleY(0.7) scaleX(1.1) scaleZ(1.1);
+  }
+}

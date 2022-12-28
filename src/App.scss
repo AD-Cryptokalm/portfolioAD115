@@ -1,0 +1,28 @@
+@font-face {
+  font-family: "electro";
+  src: url("../public/fonts/Electrolize-Regular.ttf");
+}
+.App {
+  font-family: "electre", sans-serif;
+}
+button.btnCV {
+  position: absolute;
+  right: 2rem;
+  top: 1rem;
+  color: white;
+  font-family: "Electro", sans-serif;
+  font-size: calc(0.6rem + 0.8vw);
+  padding: 15px;
+}
+@media only screen and (max-width: 630px) {
+  .btnCv-container {
+    bottom: 0;
+    position: fixed;
+  }
+  button.btnCV {
+    right: 0.5rem;
+    top: 93%;
+    padding: 0.5rem;
+    position: fixed;
+  }
+}

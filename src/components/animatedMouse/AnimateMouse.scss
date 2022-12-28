@@ -1,0 +1,29 @@
+#circle1 {
+    z-index: 1;
+    width: 100px;
+    height: 25px;
+    border-radius : 50px / 12px;
+    border: solid 1px blue;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 0px 10px 2px #0a8edf;
+    filter: blur(1px);
+    animation: 0.5s fadeout;
+    visibility: hidden;
+    transform: scale(1)
+  }
+  @keyframes fadeout {
+    0% {
+      transform: scale(0);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    99% {
+      visibility: visible;
+    }
+    100% {
+      visibility: hidden;
+      transform: scale(0);
+    }
+  }
